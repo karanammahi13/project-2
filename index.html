@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Complaint Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>College Complaint Management System</h1>
+
+    <div class="form-section">
+        <h2>Submit Complaint</h2>
+
+        <input type="text" id="studentName" placeholder="Student Name">
+
+        <select id="complaintType">
+            <option>Hostel</option>
+            <option>Library</option>
+            <option>Transport</option>
+            <option>Classroom</option>
+            <option>Technical</option>
+        </select>
+
+        <textarea id="description"
+        placeholder="Complaint Description"></textarea>
+
+        <button onclick="submitComplaint()">
+            Submit Complaint
+        </button>
+    </div>
+
+    <div class="form-section">
+        <h2>Track Complaint</h2>
+
+        <input type="text"
+        id="searchId"
+        placeholder="Enter Complaint ID">
+
+        <button onclick="trackComplaint()">
+            Track
+        </button>
+
+        <div id="trackResult"></div>
+    </div>
+
+    <div class="form-section">
+        <h2>Admin Panel</h2>
+
+        <div id="complaintList"></div>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
